@@ -37,7 +37,7 @@ app.get(`/users`, (req, res) => {
     res.status(200).json(users);
 });
 
-app.get(`/status`, (req, res) => {
+app.get(`/`, (req, res) => {
     res.send(`Server is up and running!`);
 });
 
@@ -46,3 +46,4 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
